@@ -8,7 +8,7 @@ int main() {
 
     for(int i = 0; i < a; i++){
         if(i + a < b){
-            num += a;
+            num += b;
         }
         else if(i + a == b){
             num += 1;
