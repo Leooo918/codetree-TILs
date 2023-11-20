@@ -3,7 +3,7 @@
 
 using namespace std;
 int main() {
-    int r, c, w;
+    long long r, c, w;
     vector<vector<long long>> pascalTriangle;
 
     long long total = 0;
