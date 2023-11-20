@@ -6,7 +6,7 @@ int main() {
     int r, c, w;
     vector<vector<int>> pascalTriangle;
 
-    int total = 0;
+    long total = 0;
 
     cin >> r >> c >> w;
 
