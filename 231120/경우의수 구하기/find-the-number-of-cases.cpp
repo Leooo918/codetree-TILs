@@ -6,10 +6,16 @@ int main() {
     cin >> a >> b;
     int num = 0;
 
-    num = (b - a) * b;
-
-    if(num == 0) num = 1;
+    for(int i = 0; i < a; i++){
+        if(i + a < b){
+            num += a;
+        }
+        else if(i + a == b){
+            num += 1;
+        }
+    }
 
     cout << num;
+
     return 0;
 }
