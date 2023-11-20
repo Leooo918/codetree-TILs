@@ -7,7 +7,7 @@ int main() {
     cin >> a >> b;
     int num = 0;
 
-    for(int i = a; i > 0; i--){
+    for(int i = a - 1; i > 0; i--){
         num += b - i;
     }
 
