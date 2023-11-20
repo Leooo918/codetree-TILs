@@ -4,14 +4,14 @@
 using namespace std;
 int main() {
     int r, c, w;
-    vector<vector<long>> pascalTriangle;
+    vector<vector<long long>> pascalTriangle;
 
-    long total = 0;
+    long long total = 0;
 
     cin >> r >> c >> w;
 
     for (int i = 1; i <= r + w; i++) {
-        vector<long> a;
+        vector<long long> a;
         for (int j = 0; j < i; j++) {
             if (i == 0) {
                 a.push_back(1);
