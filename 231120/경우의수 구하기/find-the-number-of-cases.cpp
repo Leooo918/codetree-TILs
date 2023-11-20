@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 int main() {
@@ -6,13 +7,8 @@ int main() {
     cin >> a >> b;
     int num = 0;
 
-    for(int i = 0; i < a; i++){
-        if(i + a < b){
-            num += b;
-        }
-        else if(i + a == b && i <= 0){
-            num += 1;
-        }
+    for(int i = a; i > 0; i--){
+        num += b - i;
     }
 
     cout << num;
