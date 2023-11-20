@@ -6,11 +6,13 @@ int main() {
     cin >> a >> b;
     int num = 0;
 
-    if(i + a < b){
-        num += b;
-    }
-    else if(i + a == b){
-         num += 1;
+    for(int i = 0; i < a - 1; i++){
+        if(i + a < b){
+            num += b;
+        }
+        else if(i + a == b){
+            num += 1;
+        }
     }
 
     cout << num;
