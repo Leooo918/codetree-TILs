@@ -15,7 +15,7 @@ int main() {
         b = num;
     }
 
-    if(num == 1 || num == 2){
+    if(n == 1){
         num = 1;
     }
 
