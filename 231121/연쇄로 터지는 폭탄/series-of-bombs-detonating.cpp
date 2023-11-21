@@ -20,6 +20,7 @@ int main() {
         int curRange = 1;
         int curNum = i;
         int curSelected = 1;
+        
         for (int j = 0; j < n; j++) {
             bool breakCheck = true;
             for (int k = 1; k <= curRange; k++) {
@@ -29,6 +30,7 @@ int main() {
                     breakCheck = false;
                 }
             }
+            if (breakCheck) continue;
             curRange++;
         }
 
@@ -43,6 +45,7 @@ int main() {
                     breakCheck = false;
                 }
             }
+            if (breakCheck) continue;
             ++curRange;
         }
 
