@@ -29,8 +29,8 @@ int main() {
                     breakCheck = false;
                 }
             }
-            if (breakCheck) break;
-            else curRange++;
+            if (breakCheck) continue;
+            curRange++;
         }
 
         curNum = i;
@@ -44,8 +44,8 @@ int main() {
                     breakCheck = false;
                 }
             }
-            if (breakCheck) break;
-            else ++curRange;
+            if (breakCheck) continue;
+            ++curRange;
         }
 
 
