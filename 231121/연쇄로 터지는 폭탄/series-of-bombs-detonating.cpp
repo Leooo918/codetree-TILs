@@ -37,7 +37,6 @@ int main() {
         }
 
         curNum = i;
-        curRange = 1;
         for (int j = 0; j < n; j++) {
             bool breakCheck = true;
             for (int k = 1; k <= curRange; k++) {
