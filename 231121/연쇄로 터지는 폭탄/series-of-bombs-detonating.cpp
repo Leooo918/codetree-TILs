@@ -29,7 +29,6 @@ int main() {
                     breakCheck = false;
                 }
             }
-            if (breakCheck) continue;
             curRange++;
         }
 
@@ -44,7 +43,6 @@ int main() {
                     breakCheck = false;
                 }
             }
-            if (breakCheck) continue;
             ++curRange;
         }
 
