@@ -20,7 +20,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         int curRange = 1;
         int curNum = i;
-        int curSelected = 1;
+        int curSelected = 0;
 
         for (int j = 0; j < n; j++) {
             bool breakCheck = true;
