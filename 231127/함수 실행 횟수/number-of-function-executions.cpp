@@ -5,9 +5,8 @@ using namespace std;
 
 int main()
 {
-	vector<int> dp;
+	vector<long> dp;
 	int n;
-	int num;
 
 	cin >> n;
 
