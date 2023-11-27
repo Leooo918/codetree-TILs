@@ -17,5 +17,5 @@ int main()
 		dp.push_back(dp[i - 1] +dp[i - 2] + 1);
 	}
 
-	cout << dp[n] / 1000000007;
+	cout << dp[n] % 1000000007;
 }
