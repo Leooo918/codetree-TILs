@@ -21,18 +21,16 @@ int main() {
 
             if(isAlphabetFind){
                 include[input[j] - 'A']++;
-                cout << input[j] << " ";
             }
 
             if(input[j] == 'A' + i){
-                else isAlphabetFind = true;
+                if(isAlphabetFind == false) isAlphabetFind = true;
             }
         }
         
         for(int j = 0; j < include.size(); j++){
             if(include[j] == 1){
                 total++;
-                cout << j << " ";
             }
         }
     }
