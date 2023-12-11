@@ -9,30 +9,35 @@ int main() {
     cin >> input;
 
     int total = 0;
-    vector<int> v(52);
+    vector<int> alphabet(52);
 
     for(int i = 0; i < 26; i++){
-        int position = -1;
+        bool isAlphabetFind = false;
+        vector<int> include(26);
         for(int j = 0; j < input.size(); j++){
-            if(position >= 0) position++;
             if(input[j] == 'A' + i){
-                if(position < 0)position = 0;
-                else break;
+                if(isAlphabetFind)break;
+            }
+
+            if(isAlphabetFind){
+                include[input[j] - 'A']++;
+                cout << input[j] << " ";
+            }
+
+            if(input[j] == 'A' + i){
+                else isAlphabetFind = true;
             }
         }
-        v[position]++;
-    }
-
-    int n = max_element(v.begin(), v.end()) - v.begin();
-    int m = 0;
-
-    for(int i = 0; i < v.size();i++){
-        if(i != n){
-            m += v[i];
+        
+        for(int j = 0; j < include.size(); j++){
+            if(include[j] == 1){
+                total++;
+                cout << j << " ";
+            }
         }
     }
 
-    cout << m / 2;
+    cout << total / 2;
 
     return 0;
 }
